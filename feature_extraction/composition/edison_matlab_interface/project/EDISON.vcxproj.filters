@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{1ff78b43-20a7-4b3d-997e-e76c672cf565}</UniqueIdentifier>
+      <Extensions>*.h</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{eaa56762-4d59-4d4d-8485-47a147b1c10e}</UniqueIdentifier>
+      <Extensions>*.cpp</Extensions>
+    </Filter>
+    <Filter Include="Bitmaps">
+      <UniqueIdentifier>{72f121ad-4e61-4d1c-a34e-d684d9d19fb6}</UniqueIdentifier>
+      <Extensions>*.bmp</Extensions>
+    </Filter>
+    <Filter Include="Icons">
+      <UniqueIdentifier>{4c4e62b0-0cc5-4664-a901-e99a006d816d}</UniqueIdentifier>
+      <Extensions>*.ico</Extensions>
+    </Filter>
+    <Filter Include="Cursors">
+      <UniqueIdentifier>{eec4eea5-d300-4113-b209-6f571124d97f}</UniqueIdentifier>
+      <Extensions>*.cur</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\edge\BgDefaults.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\edge\BgEdge.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\edge\BgEdgeDetect.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\edge\BgEdgeList.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\edge\BgImage.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GUI\BgImagPGM.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GUI\BgImagPNM.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\GUI\bgimsystem.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\segm\ms.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\segm\msImageProcessor.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\segm\msSys.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\segm\RAList.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\segm\rlist.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\segm\tdef.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\edge\BgEdge.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\edge\BgEdgeDetect.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\edge\BgEdgeList.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\edge\BgGlobalFc.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\edge\BgImage.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GUI\BgImagPGM.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GUI\BgImagPNM.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\GUI\bgimsystem.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\segm\ms.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\segm\msImageProcessor.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\segm\msSys.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\segm\RAList.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\segm\rlist.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="edison.rc">
+      <Filter>Cursors</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\GUI\icons\arrow.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\caip_logo.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\copy.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\cross.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\cut.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\down_arrow.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\h.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\help.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\new.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\new_e.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\new_s.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\open.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\p.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\paste.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\print.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\riul_logo.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\rotated_h.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\rotated_p.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\rutgers_logo.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\save.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\zoom_in.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\zoom_out.bmp">
+      <Filter>Bitmaps</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\bgimsystem.ico">
+      <Filter>Icons</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\chart.ico">
+      <Filter>Icons</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\error.ico">
+      <Filter>Icons</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\info.ico">
+      <Filter>Icons</Filter>
+    </CustomBuild>
+    <CustomBuild Include="..\GUI\icons\mondrian.ico">
+      <Filter>Icons</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\question.ico">
+      <Filter>Icons</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\tip.ico">
+      <Filter>Icons</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\warning.ico">
+      <Filter>Icons</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\blank.cur">
+      <Filter>Cursors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\bullseye.cur">
+      <Filter>Cursors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\hand.cur">
+      <Filter>Cursors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\magnif1.cur">
+      <Filter>Cursors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\noentry.cur">
+      <Filter>Cursors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\pbrush.cur">
+      <Filter>Cursors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\pencil.cur">
+      <Filter>Cursors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\pntleft.cur">
+      <Filter>Cursors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\pntright.cur">
+      <Filter>Cursors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\query.cur">
+      <Filter>Cursors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\roller.cur">
+      <Filter>Cursors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\size.cur">
+      <Filter>Cursors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="wx\msw\watch1.cur">
+      <Filter>Cursors</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

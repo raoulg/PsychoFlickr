@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug_wx240|Win32">
+      <Configuration>Debug_wx240</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release_wx240|Win32">
+      <Configuration>Release_wx240</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <SccProjectName />
+    <SccLocalPath />
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_wx240|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_wx240|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug_wx240|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release_wx240|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.Cpp.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_wx240|Win32'">
+    <OutDir>.\Release_wx240\</OutDir>
+    <IntDir>.\Release_wx240\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_wx240|Win32'">
+    <OutDir>.\Debug_wx240\</OutDir>
+    <IntDir>.\Debug_wx240\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release_wx240|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>c:/wx2/include;c:/wx2/lib/msw;../edge;../segm;../GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;__WINDOWS__;__WXMSW__;__WIN95__;__WIN32__;WINVER=0x0400;STRICT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release_wx240\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release_wx240\EDISON.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release_wx240\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release_wx240\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Release_wx240\EDISON.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>c:/wx2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release_wx240\EDISON.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libci.lib;msvcrtd.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>.\Release_wx240\EDISON.exe</OutputFile>
+      <AdditionalLibraryDirectories>D:\bin\wxWidgets-2.8.4\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>wxmsw28_core.lib;wxbase28.lib;wxtiff.lib;wxjpeg.lib;wxpng.lib;wxzlib.lib;wxregex.lib;wxexpat.lib;odbc32.lib;odbccp32.lib;comctl32.lib;rpcrt4.lib;wsock32.lib;winmm.lib;wxmsw.lib;png.lib;zlib.lib;jpeg.lib;tiff.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug_wx240|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>c:/wx2/include;c:/wx2/lib/mswd;../edge;../segm;../GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;__WINDOWS__;__WXMSW__;DEBUG=1;__WXDEBUG__;__WIN95__;__WIN32__;WINVER=0x0400;STRICT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug_wx240\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug_wx240\EDISON.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug_wx240\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug_wx240\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Debug_wx240\EDISON.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>c:/wx2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug_wx240\EDISON.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libcd.lib;libcid.lib;msvcrt.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>.\Debug_wx240\EDISON.exe</OutputFile>
+      <AdditionalLibraryDirectories>c:/wx2/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;comctl32.lib;rpcrt4.lib;wsock32.lib;winmm.lib;wxmswd.lib;pngd.lib;zlibd.lib;jpegd.lib;tiffd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <Optimization>Disabled</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalIncludeDirectories>c:/wx2/include;../project;../edge;../segm;../GUI;c:/wx/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;__WINDOWS__;__WXMSW__;DEBUG=1;__WXDEBUG__;__WIN95__;__WIN32__;WINVER=0x0400;STRICT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Debug\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Debug\EDISON.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Debug\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Debug\EDISON.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>D:\bin\wxWidgets-2.8.4\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug\EDISON.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libcd.lib;libcid.lib;msvcrt.lib;LIBCMT.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>.\Debug\EDISON.exe</OutputFile>
+      <AdditionalLibraryDirectories>D:\bin\wxWidgets-2.8.4\lib\vc_lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;comctl32.lib;rpcrt4.lib;wsock32.lib;winmm.lib;wxzlibd.lib;wxtiffd.lib;wxregexd.lib;wxpngd.lib;wxjpegd.lib;wxexpatd.lib;wxmsw28d_xrc.lib;wxmsw28d_richtext.lib;wxmsw28d_qa.lib;wxmsw28d_media.lib;wxmsw28d_html.lib;wxmsw28d_gl.lib;wxmsw28d_dbgrid.lib;wxmsw28d_core.lib;wxmsw28d_aui.lib;wxmsw28d_adv.lib;wxbase28d_xml.lib;wxbase28d_odbc.lib;wxbase28d_net.lib;wxbase28d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <StringPooling>true</StringPooling>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <Optimization>MaxSpeed</Optimization>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <WarningLevel>Level3</WarningLevel>
+      <AdditionalIncludeDirectories>c:/wx2/include;../edge;../segm;../GUI;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;WIN32;_WINDOWS;__WINDOWS__;__WXMSW__;__WIN95__;__WIN32__;WINVER=0x0400;STRICT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AssemblerListingLocation>.\Release\</AssemblerListingLocation>
+      <PrecompiledHeaderOutputFile>.\Release\EDISON.pch</PrecompiledHeaderOutputFile>
+      <ObjectFileName>.\Release\</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release\</ProgramDataBaseFileName>
+    </ClCompile>
+    <Midl>
+      <TypeLibraryName>.\Release\EDISON.tlb</TypeLibraryName>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>c:/wx2/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release\EDISON.bsc</OutputFile>
+    </Bscmake>
+    <Link>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <SubSystem>Windows</SubSystem>
+      <IgnoreSpecificDefaultLibraries>libc.lib;libci.lib;msvcrtd.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <OutputFile>.\Release\EDISON.exe</OutputFile>
+      <AdditionalLibraryDirectories>c:/wx2/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;comctl32.lib;rpcrt4.lib;wsock32.lib;winmm.lib;wx.lib;xpm.lib;png.lib;zlib.lib;jpeg.lib;tiff.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\edge\BgDefaults.h" />
+    <ClInclude Include="..\edge\BgEdge.h" />
+    <ClInclude Include="..\edge\BgEdgeDetect.h" />
+    <ClInclude Include="..\edge\BgEdgeList.h" />
+    <ClInclude Include="..\edge\BgImage.h" />
+    <ClInclude Include="..\GUI\BgImagPGM.h" />
+    <ClInclude Include="..\GUI\BgImagPNM.h" />
+    <ClInclude Include="..\GUI\bgimsystem.h" />
+    <ClInclude Include="..\segm\ms.h" />
+    <ClInclude Include="..\segm\msImageProcessor.h" />
+    <ClInclude Include="..\segm\msSys.h" />
+    <ClInclude Include="..\segm\RAList.h" />
+    <ClInclude Include="..\segm\rlist.h" />
+    <ClInclude Include="..\segm\tdef.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\edge\BgEdge.cpp" />
+    <ClCompile Include="..\edge\BgEdgeDetect.cpp" />
+    <ClCompile Include="..\edge\BgEdgeList.cpp" />
+    <ClCompile Include="..\edge\BgGlobalFc.cpp" />
+    <ClCompile Include="..\edge\BgImage.cpp" />
+    <ClCompile Include="..\GUI\BgImagPGM.cpp" />
+    <ClCompile Include="..\GUI\BgImagPNM.cpp" />
+    <ClCompile Include="..\GUI\bgimsystem.cpp" />
+    <ClCompile Include="..\segm\ms.cpp" />
+    <ClCompile Include="..\segm\msImageProcessor.cpp" />
+    <ClCompile Include="..\segm\msSys.cpp" />
+    <ClCompile Include="..\segm\RAList.cpp" />
+    <ClCompile Include="..\segm\rlist.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\GUI\icons\arrow.bmp" />
+    <CustomBuild Include="..\GUI\icons\caip_logo.bmp" />
+    <CustomBuild Include="..\GUI\icons\copy.bmp" />
+    <CustomBuild Include="..\GUI\icons\cross.bmp" />
+    <CustomBuild Include="..\GUI\icons\cut.bmp" />
+    <CustomBuild Include="..\GUI\icons\down_arrow.bmp" />
+    <CustomBuild Include="..\GUI\icons\h.bmp" />
+    <CustomBuild Include="..\GUI\icons\help.bmp" />
+    <CustomBuild Include="..\GUI\icons\new.bmp" />
+    <CustomBuild Include="..\GUI\icons\new_e.bmp" />
+    <CustomBuild Include="..\GUI\icons\new_s.bmp" />
+    <CustomBuild Include="..\GUI\icons\open.bmp" />
+    <CustomBuild Include="..\GUI\icons\p.bmp" />
+    <CustomBuild Include="..\GUI\icons\paste.bmp" />
+    <CustomBuild Include="..\GUI\icons\print.bmp" />
+    <CustomBuild Include="..\GUI\icons\riul_logo.bmp" />
+    <CustomBuild Include="..\GUI\icons\rotated_h.bmp" />
+    <CustomBuild Include="..\GUI\icons\rotated_p.bmp" />
+    <CustomBuild Include="..\GUI\icons\rutgers_logo.bmp" />
+    <CustomBuild Include="..\GUI\icons\save.bmp" />
+    <CustomBuild Include="..\GUI\icons\zoom_in.bmp" />
+    <CustomBuild Include="..\GUI\icons\zoom_out.bmp" />
+    <CustomBuild Include="..\GUI\icons\bgimsystem.ico" />
+    <CustomBuild Include="..\GUI\icons\chart.ico" />
+    <CustomBuild Include="wx\msw\error.ico" />
+    <CustomBuild Include="wx\msw\info.ico" />
+    <CustomBuild Include="..\GUI\icons\mondrian.ico" />
+    <CustomBuild Include="wx\msw\question.ico" />
+    <CustomBuild Include="wx\msw\tip.ico" />
+    <CustomBuild Include="wx\msw\warning.ico" />
+    <CustomBuild Include="wx\msw\blank.cur" />
+    <CustomBuild Include="wx\msw\bullseye.cur" />
+    <CustomBuild Include="wx\msw\hand.cur" />
+    <CustomBuild Include="wx\msw\magnif1.cur" />
+    <CustomBuild Include="wx\msw\noentry.cur" />
+    <CustomBuild Include="wx\msw\pbrush.cur" />
+    <CustomBuild Include="wx\msw\pencil.cur" />
+    <CustomBuild Include="wx\msw\pntleft.cur" />
+    <CustomBuild Include="wx\msw\pntright.cur" />
+    <CustomBuild Include="wx\msw\query.cur" />
+    <CustomBuild Include="wx\msw\roller.cur" />
+    <CustomBuild Include="wx\msw\size.cur" />
+    <CustomBuild Include="wx\msw\watch1.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="edison.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

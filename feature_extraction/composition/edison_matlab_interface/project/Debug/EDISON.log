@@ -1,0 +1,59 @@
+﻿Compilazione avviata 02/06/2012 19:01:41.
+     1>Progetto "C:\Users\Omar\Dropbox\Progetto TTR\Features\edison_matlab_interface\project\EDISON.vcxproj" sul nodo 2 (destinazioni: build).
+     1>InitializeBuildStatus:
+         Aggiornamento timestamp di ".\Debug\EDISON.unsuccessfulbuild".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /Ic:/wx2/include /I../project /I../edge /I../segm /I../GUI /Ic:/wx/include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D __WINDOWS__ /D __WXMSW__ /D DEBUG=1 /D __WXDEBUG__ /D __WIN95__ /D __WIN32__ /D WINVER=0x0400 /D STRICT /D _VC80_UPGRADE=0x0600 /Gm /EHsc /MT /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\edge\BgEdge.cpp ..\edge\BgEdgeDetect.cpp ..\edge\BgEdgeList.cpp ..\edge\BgGlobalFc.cpp ..\edge\BgImage.cpp ..\GUI\BgImagPGM.cpp ..\GUI\BgImagPNM.cpp ..\GUI\bgimsystem.cpp ..\segm\ms.cpp ..\segm\msImageProcessor.cpp ..\segm\msSys.cpp ..\segm\RAList.cpp ..\segm\rlist.cpp
+         rlist.cpp
+         RAList.cpp
+         msSys.cpp
+         msImageProcessor.cpp
+         ms.cpp
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\segm\ms.cpp(1154): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105): vedere la dichiarazione di 'strcpy'
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\segm\ms.cpp(1155): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110): vedere la dichiarazione di 'strcat'
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\segm\ms.cpp(1156): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110): vedere la dichiarazione di 'strcat'
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\segm\ms.cpp(1157): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110): vedere la dichiarazione di 'strcat'
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\segm\ms.cpp(1160): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110): vedere la dichiarazione di 'strcat'
+         bgimsystem.cpp
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\gui\bgimsystem.cpp(12): fatal error C1083: Impossibile aprire il file inclusione 'wx/wxprec.h': No such file or directory
+         BgImagPNM.cpp
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\gui\bgimagpnm.cpp(17): fatal error C1083: Impossibile aprire il file inclusione 'wx/wxprec.h': No such file or directory
+         BgImagPGM.cpp
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\gui\bgimagpgm.cpp(17): fatal error C1083: Impossibile aprire il file inclusione 'wx/wxprec.h': No such file or directory
+         BgImage.cpp
+         BgGlobalFc.cpp
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\edge\bgglobalfc.cpp(174): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234): vedere la dichiarazione di 'fopen'
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\edge\bgglobalfc.cpp(207): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234): vedere la dichiarazione di 'fopen'
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\edge\bgglobalfc.cpp(259): warning C4244: '=': conversione da 'time_t' a 'unsigned long'. Possibile perdita di dati.
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\edge\bgglobalfc.cpp(260): warning C4244: '=': conversione da 'time_t' a 'unsigned long'. Possibile perdita di dati.
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\edge\bgglobalfc.cpp(449): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105): vedere la dichiarazione di 'strcpy'
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\edge\bgglobalfc.cpp(453): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105): vedere la dichiarazione di 'strcpy'
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\edge\bgglobalfc.cpp(457): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105): vedere la dichiarazione di 'strcpy'
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\edge\bgglobalfc.cpp(458): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(110): vedere la dichiarazione di 'strcat'
+         BgEdgeList.cpp
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\edge\bgedgelist.cpp(337): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234): vedere la dichiarazione di 'fopen'
+         BgEdgeDetect.cpp
+     1>c:\users\omar\dropbox\progetto ttr\features\edison_matlab_interface\edge\bgedgedetect.cpp(386): error C2668: 'pow': chiamata ambigua a funzione in overload
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\math.h(583): potrebbe essere 'long double pow(long double,int)'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\math.h(535): o 'float pow(float,int)'
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\math.h(497): o 'double pow(double,int)'
+                 durante la ricerca di corrispondenza con l'elenco di argomenti '(int, int)'
+         BgEdge.cpp
+         Generazione del codice in corso...
+     1>Compilazione progetto "C:\Users\Omar\Dropbox\Progetto TTR\Features\edison_matlab_interface\project\EDISON.vcxproj" (destinazioni: build) NON COMPLETATA.
+
+Compilazione NON RIUSCITA.
+
+Tempo trascorso 00:00:01.28
