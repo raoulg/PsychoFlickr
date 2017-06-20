@@ -102,8 +102,8 @@ vettore(55:78)= featur;
 cd ..
 cd ..
 %% objects
-cd objects
-%Detection di persone e oggetti
+% cd objects
+% %% Detection di persone e oggetti
 % cd detection
 % [ vector_detection ] = detection( immagine_elaborata );
 % vettore(79:106) = vector_detection;
