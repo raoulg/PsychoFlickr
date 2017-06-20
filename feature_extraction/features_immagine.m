@@ -48,17 +48,17 @@ cd composition
     cd ..
 
 %     if j==46 && (i==733 || i== 736)
-%          vettore(22) = 0;
-%         vettore(23) = 0; 
+          vettore(22) = 0;
+         vettore(23) = 0; 
 %     else
-%     %Segmentazione con Edison (cfr. edison_wrapper.m)
-    cd edison_matlab_interface
-    [ fimage labels modes regSize ]=edison_wrapper(immagine_elaborata,@RGB2Luv);
-    area_immagine= size(immagine_elaborata,1)*size(immagine_elaborata,2);
-    [area_media] = normalizza_area_regioni(regSize,area_immagine);
-    vettore(22) = size(regSize,2);
-    vettore(23) = area_media*100; 
-    cd ..
+% %     %Segmentazione con Edison (cfr. edison_wrapper.m)
+%     cd edison_matlab_interface
+%     [ fimage labels modes regSize ]=edison_wrapper(immagine_elaborata,@RGB2Luv);
+%     area_immagine= size(immagine_elaborata,1)*size(immagine_elaborata,2);
+%     [area_media] = normalizza_area_regioni(regSize,area_immagine);
+%     vettore(22) = size(regSize,2);
+%     vettore(23) = area_media*100; 
+%     cd ..
 %     end
 
     % dof 

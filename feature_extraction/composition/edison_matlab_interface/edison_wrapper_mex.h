@@ -9,13 +9,13 @@
 #include <time.h>
 
 /* edison include files */
-#include "segm/msImageProcessor.h"
+#include "segm\msImageProcessor.h"
 
-#include "edge/BgImage.h"
-#include "edge/BgDefaults.h"
-#include "edge/BgEdge.h"
-#include "edge/BgEdgeList.h"
-#include "edge/BgEdgeDetect.h"
+#include "edge\BgImage.h"
+#include "edge\BgDefaults.h"
+#include "edge\BgEdge.h"
+#include "edge\BgEdgeList.h"
+#include "edge\BgEdgeDetect.h"
 
 
 const kernelType DefualtKernelType = Uniform;
