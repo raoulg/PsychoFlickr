@@ -38,7 +38,7 @@ vettore(19)= sum(out==10);
 vettore(20)= sum(out==11);
 cd ..
 cd ..
-%{
+
 %% composition
 cd composition
     %Edge_Detection con Canny
@@ -47,11 +47,11 @@ cd composition
     vettore(21)= perc_edge;
     cd ..
 
-    if j==46 && (i==733 || i== 736)
-         vettore(22) = 0;
-        vettore(23) = 0; 
-    else
-    %Segmentazione con Edison (cfr. edison_wrapper.m)
+%     if j==46 && (i==733 || i== 736)
+%          vettore(22) = 0;
+%         vettore(23) = 0; 
+%     else
+%     %Segmentazione con Edison (cfr. edison_wrapper.m)
     cd edison_matlab_interface
     [ fimage labels modes regSize ]=edison_wrapper(immagine_elaborata,@RGB2Luv);
     area_immagine= size(immagine_elaborata,1)*size(immagine_elaborata,2);
@@ -59,7 +59,7 @@ cd composition
     vettore(22) = size(regSize,2);
     vettore(23) = area_media*100; 
     cd ..
-    end
+%     end
 
     % dof 
     dof=low_depth_of_field_indicators(immagine_elaborata);
@@ -77,7 +77,7 @@ cd composition
     %     vettore(115)=X+Y; 
     %     vettore(116)=X/Y;          
 cd ..
-%}
+
 %% texture
 %gray dist entropy
 cd texture
