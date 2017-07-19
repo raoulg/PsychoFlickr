@@ -1,0 +1,742 @@
+commit f56203c8f10cb5bd1f1d7288014be7e0e81e7d78
+Merge: f7196d0 da4b435
+Author: Raoul Grouls <raoul@evoluminate.nl>
+Date:   Wed Jun 21 13:54:44 2017 +0200
+
+    Merge branch 'master' of https://github.com/raoulg/PsychoFlickr
+
+commit f7196d079fbfd9bb012553a999b35c2a2f234311
+Author: Raoul Grouls <raoul@evoluminate.nl>
+Date:   Wed Jun 21 13:50:46 2017 +0200
+
+    wrote README
+
+ README    | 12 ++++++++++++
+ README.md | 12 ++++++++++++
+ 2 files changed, 24 insertions(+)
+
+commit da4b435270297450ea912cd2bc318abe27a39e3d
+Author: Raoul Grouls <raoul@evoluminate.nl>
+Date:   Wed Jun 21 13:50:46 2017 +0200
+
+    wrote README
+
+ README | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+commit 40ecb6230e6e51ef4eea2d081523577a5e846bda
+Author: Raoul Grouls <raoul@evoluminate.nl>
+Date:   Tue Jun 20 22:30:53 2017 +0200
+
+    gitignore
+
+ .DS_Store  | Bin 6148 -> 0 bytes
+ .Rhistory  | 270 -------------------------------------------------------------
+ .gitignore |  57 +++++++++++++
+ edgedet.m  |   5 --
+ 4 files changed, 57 insertions(+), 275 deletions(-)
+
+commit 0fc529bed2ed309188bb30e866f3e19f37019926
+Author: Raoul Grouls <raoul@evoluminate.nl>
+Date:   Tue Jun 20 17:20:17 2017 +0200
+
+    minor changes
+
+ .DS_Store                              | Bin 6148 -> 6148 bytes
+ feature_extraction/features_immagine.m |   4 ++--
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+commit e7d17c6812830e75ddeb07b80ac34587e3f88591
+Author: Raoul Grouls <raoul@evoluminate.nl>
+Date:   Tue Jun 20 16:59:14 2017 +0200
+
+    vettore(22:23)=0, load(dataset), R.matlab
+
+ .Rhistory                                          | 270 +++++++++++++++++++++
+ edgedet.m                                          |   5 +
+ .../edison_matlab_interface/edison_wrapper_mex.h   |  12 +-
+ feature_extraction/dataset.mat                     | Bin 0 -> 7228 bytes
+ feature_extraction/features_immagine.m             |   8 +-
+ 5 files changed, 285 insertions(+), 10 deletions(-)
+
+commit db5489b235b4c42eb6fc3c463a9e605fdfec9b59
+Author: Raoul Grouls <raoul@evoluminate.nl>
+Date:   Tue Jun 20 15:28:02 2017 +0200
+
+    edison_wrapper_mex weggehaald in features_immagine 50:62 vanwege fouten
+
+ .../composition/Edge_detection/edge_detection.m~   | 28 ----------------------
+ .../edison_matlab_interface/edison_wrapper_mex.h   | 12 +++++-----
+ feature_extraction/features_immagine.m             | 20 ++++++++--------
+ 3 files changed, 16 insertions(+), 44 deletions(-)
+
+commit 3ec294e9b0762c438f1215cc607bde37299ef7ed
+Author: Raoul Grouls <raoul@evoluminate.nl>
+Date:   Tue Jun 20 15:01:04 2017 +0200
+
+    edge detection bugfix
+
+ feature_extraction/.DS_Store                       | Bin 0 -> 6148 bytes
+ .../composition/Edge_detection/edge_detection.m    |  13 +++-------
+ .../composition/Edge_detection/edge_detection.m~   |  28 +++++++++++++++++++++
+ feature_extraction/dataset.mat                     | Bin 88739 -> 0 bytes
+ feature_extraction/features_immagine.m             |  16 ++++++------
+ 5 files changed, 40 insertions(+), 17 deletions(-)
+
+commit a17383b8d5bdff4afeb82eda54d8c25e086b1f6b
+Author: Raoul Grouls <raoul@evoluminate.nl>
+Date:   Tue Jun 20 11:46:18 2017 +0200
+
+    fixed  user forloop
+
+ .DS_Store                      | Bin 0 -> 6148 bytes
+ feature_extraction/dataset.mat | Bin 0 -> 88739 bytes
+ feature_extraction/main.m      |   8 ++++----
+ 3 files changed, 4 insertions(+), 4 deletions(-)
+
+commit 6946f9fd09659781044c4586552ed2d55bfef46c
+Author: Raoul Grouls <rgrouls@Lumen-macbook.local>
+Date:   Mon Jun 19 21:24:21 2017 +0200
+
+    README toegevoegd
+
+ README | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
+commit fc39e86f97b00372da7d1a83ab9b04ab60884bdc
+Author: Raoul Grouls <rgrouls@Lumen-macbook.local>
+Date:   Mon Jun 19 20:53:47 2017 +0200
+
+    Vertalingen uit italiaans, eerste ronde debugging Windows file syntax
+
+ dataset.mat                                        |   Bin 0 -> 2115 bytes
+ .../colors/Weijer/ColorNaming/evaluation_example.m |    33 +
+ .../Weijer/ColorNaming/example_color_naming.m      |    23 +
+ .../colors/Weijer/ColorNaming/im2c.m               |    38 +
+ .../colors/Weijer/ColorNaming/readme.txt           |     9 +
+ .../colors/Weijer/ColorNaming/w2c.mat              |   Bin 0 -> 2734783 bytes
+ .../colors/Weijer/ColorNaming/w2c.txt              | 32768 +++++++++++++++++++
+ .../colors/Weijer/ColorNaming/w2c_4096.mat         |   Bin 0 -> 342139 bytes
+ .../colors/Weijer/ColorNaming/w2c_4096.txt         |  4096 +++
+ .../colors/Weijer/ColorNaming/wt.mat               |   Bin 0 -> 141414 bytes
+ .../colors/color_name/Source/ColorNaming.tar       |   Bin 0 -> 8396800 bytes
+ .../colors/color_name/Source/car.jpg               |   Bin 0 -> 30679 bytes
+ .../colors/color_name/Source/evaluation_example.m  |    33 +
+ .../color_name/Source/example_color_naming.m       |    23 +
+ feature_extraction/colors/color_name/Source/im2c.m |    38 +
+ .../colors/color_name/Source/opp_color_circle.tif  |   Bin 0 -> 274684 bytes
+ .../colors/color_name/Source/readme.txt            |     9 +
+ .../colors/color_name/Source/w2c.mat               |   Bin 0 -> 2734783 bytes
+ .../colors/color_name/Source/w2c.txt               | 32768 +++++++++++++++++++
+ .../colors/color_name/Source/w2c_4096.mat          |   Bin 0 -> 342139 bytes
+ .../colors/color_name/Source/w2c_4096.txt          |  4096 +++
+ feature_extraction/colors/color_name/Source/wt.mat |   Bin 0 -> 141414 bytes
+ feature_extraction/colors/color_name/im2c.m        |    38 +
+ feature_extraction/colors/color_name/w2c.mat       |   Bin 0 -> 2734783 bytes
+ feature_extraction/colors/color_name/w2c_4096.mat  |   Bin 0 -> 342139 bytes
+ feature_extraction/colors/color_name/wt.mat        |   Bin 0 -> 141414 bytes
+ feature_extraction/colors/colorfulness.m           |    29 +
+ feature_extraction/colors/emd/Readme.txt           |    30 +
+ feature_extraction/colors/emd/cube.m               |    44 +
+ feature_extraction/colors/emd/emd.m                |    69 +
+ feature_extraction/colors/emd/gdf.m                |    25 +
+ feature_extraction/colors/emd/gdm.m                |    41 +
+ feature_extraction/colors/emd/showPixelValues.m    |    76 +
+ feature_extraction/colors/emd/test.m               |    30 +
+ feature_extraction/colors/histcn.m                 |   138 +
+ feature_extraction/colors/huestats.m               |    38 +
+ feature_extraction/colors/indicators.m             |     8 +
+ feature_extraction/colors/medie_colore.m           |    23 +
+ feature_extraction/colors/pda.m                    |    23 +
+ feature_extraction/colors/rgb2ihls.m               |    37 +
+ feature_extraction/colors/use_of_light.m           |     6 +
+ .../composition/Edge_detection/edge_detection.m    |    20 +
+ .../composition/Edge_detection/percentuale_edge.m  |    20 +
+ .../composition/Edge_detection/visita.m            |    35 +
+ .../edison_matlab_interface/GUI/BgImagPGM.cpp      |   181 +
+ .../edison_matlab_interface/GUI/BgImagPGM.h        |    52 +
+ .../edison_matlab_interface/GUI/BgImagPNM.cpp      |   172 +
+ .../edison_matlab_interface/GUI/BgImagPNM.h        |    44 +
+ .../edison_matlab_interface/GUI/bgimsystem.cpp     |  8239 +++++
+ .../edison_matlab_interface/GUI/bgimsystem.h       |  1051 +
+ .../edison_matlab_interface/GUI/icons/arrow.bmp    |   Bin 0 -> 1478 bytes
+ .../GUI/icons/bgimsystem.ico                       |   Bin 0 -> 766 bytes
+ .../GUI/icons/caip_logo.bmp                        |   Bin 0 -> 2374 bytes
+ .../edison_matlab_interface/GUI/icons/chart.ico    |   Bin 0 -> 766 bytes
+ .../edison_matlab_interface/GUI/icons/copy.bmp     |   Bin 0 -> 1478 bytes
+ .../edison_matlab_interface/GUI/icons/copy.xpm     |    25 +
+ .../edison_matlab_interface/GUI/icons/cross.bmp    |   Bin 0 -> 358 bytes
+ .../edison_matlab_interface/GUI/icons/cut.bmp      |   Bin 0 -> 1478 bytes
+ .../edison_matlab_interface/GUI/icons/cut.xpm      |    24 +
+ .../GUI/icons/down_arrow.bmp                       |   Bin 0 -> 522 bytes
+ .../edison_matlab_interface/GUI/icons/h.bmp        |   Bin 0 -> 154 bytes
+ .../edison_matlab_interface/GUI/icons/help.bmp     |   Bin 0 -> 1478 bytes
+ .../edison_matlab_interface/GUI/icons/help.xpm     |    25 +
+ .../edison_matlab_interface/GUI/icons/mondrian.ico |   Bin 0 -> 766 bytes
+ .../edison_matlab_interface/GUI/icons/mondrian.xpm |    44 +
+ .../edison_matlab_interface/GUI/icons/new.bmp      |   Bin 0 -> 238 bytes
+ .../edison_matlab_interface/GUI/icons/new.xpm      |    24 +
+ .../edison_matlab_interface/GUI/icons/new_e.bmp    |   Bin 0 -> 1478 bytes
+ .../edison_matlab_interface/GUI/icons/new_s.bmp    |   Bin 0 -> 1478 bytes
+ .../edison_matlab_interface/GUI/icons/open.bmp     |   Bin 0 -> 1478 bytes
+ .../edison_matlab_interface/GUI/icons/open.xpm     |    26 +
+ .../edison_matlab_interface/GUI/icons/p.bmp        |   Bin 0 -> 154 bytes
+ .../edison_matlab_interface/GUI/icons/paste.bmp    |   Bin 0 -> 1478 bytes
+ .../edison_matlab_interface/GUI/icons/paste.xpm    |    27 +
+ .../edison_matlab_interface/GUI/icons/print.bmp    |   Bin 0 -> 1478 bytes
+ .../edison_matlab_interface/GUI/icons/print.xpm    |    26 +
+ .../GUI/icons/riul_logo.bmp                        |   Bin 0 -> 29962 bytes
+ .../GUI/icons/rotated_h.bmp                        |   Bin 0 -> 166 bytes
+ .../GUI/icons/rotated_p.bmp                        |   Bin 0 -> 154 bytes
+ .../GUI/icons/rutgers_logo.bmp                     |   Bin 0 -> 7198 bytes
+ .../edison_matlab_interface/GUI/icons/save.bmp     |   Bin 0 -> 1478 bytes
+ .../edison_matlab_interface/GUI/icons/save.xpm     |    25 +
+ .../edison_matlab_interface/GUI/icons/zoom_in.bmp  |   Bin 0 -> 1478 bytes
+ .../edison_matlab_interface/GUI/icons/zoom_out.bmp |   Bin 0 -> 1478 bytes
+ .../composition/edison_matlab_interface/Luv2RGB.m  |    36 +
+ .../composition/edison_matlab_interface/Makefile   |    30 +
+ .../composition/edison_matlab_interface/RGB2Luv.m  |    40 +
+ .../edison_matlab_interface/SysReadme.txt          |   104 +
+ .../compile_edison_wrapper.m                       |    10 +
+ .../edison_matlab_interface/edge/BgDefaults.h      |    70 +
+ .../edison_matlab_interface/edge/BgEdge.cpp        |    92 +
+ .../edison_matlab_interface/edge/BgEdge.h          |    40 +
+ .../edison_matlab_interface/edge/BgEdgeDetect.cpp  |  1601 +
+ .../edison_matlab_interface/edge/BgEdgeDetect.h    |   169 +
+ .../edison_matlab_interface/edge/BgEdgeList.cpp    |   450 +
+ .../edison_matlab_interface/edge/BgEdgeList.h      |    58 +
+ .../edison_matlab_interface/edge/BgGlobalFc.cpp    |   467 +
+ .../edison_matlab_interface/edge/BgImage.cpp       |   373 +
+ .../edison_matlab_interface/edge/BgImage.h         |    71 +
+ .../composition/edison_matlab_interface/edison     |   Bin 0 -> 169682 bytes
+ .../edison_matlab_interface/edison_wrapper.m       |   190 +
+ .../edison_matlab_interface/edison_wrapper_mex.cpp |   260 +
+ .../edison_matlab_interface/edison_wrapper_mex.h   |    31 +
+ .../edison_wrapper_mex.mexa64                      |   Bin 0 -> 115147 bytes
+ .../edison_wrapper_mex.mexglx                      |   Bin 0 -> 107659 bytes
+ .../edison_wrapper_mex.mexw32                      |   Bin 0 -> 49152 bytes
+ .../edison_wrapper_mex.mexw64                      |   Bin 0 -> 58368 bytes
+ .../edison_matlab_interface/edison_wrapper_mex.opt |   Bin 0 -> 43520 bytes
+ .../edison_matlab_interface/edison_wrapper_mex.pdb |   Bin 0 -> 307200 bytes
+ .../edison_matlab_interface/help/doc/edge.html     |    91 +
+ .../help/doc/figs/edge_fig1.jpg                    |   Bin 0 -> 227430 bytes
+ .../edison_matlab_interface/help/doc/figs/rh.jpg   |   Bin 0 -> 517 bytes
+ .../help/doc/figs/segm_fig.jpg                     |   Bin 0 -> 134226 bytes
+ .../help/doc/figs/syng_fig.jpg                     |   Bin 0 -> 172020 bytes
+ .../help/doc/figs/sys_fig1.jpg                     |   Bin 0 -> 73903 bytes
+ .../help/doc/figs/sys_fig2.jpg                     |   Bin 0 -> 87087 bytes
+ .../help/doc/figs/sys_fig3.jpg                     |   Bin 0 -> 66358 bytes
+ .../help/doc/figs/sys_fig4.jpg                     |   Bin 0 -> 52595 bytes
+ .../help/doc/figs/win_fig1.jpg                     |   Bin 0 -> 81293 bytes
+ .../help/doc/figs/win_fig2.jpg                     |   Bin 0 -> 89717 bytes
+ .../edison_matlab_interface/help/doc/help.html     |    35 +
+ .../edison_matlab_interface/help/doc/overview.html |   182 +
+ .../edison_matlab_interface/help/doc/ref.html      |    44 +
+ .../edison_matlab_interface/help/doc/segm.html     |   101 +
+ .../edison_matlab_interface/help/doc/syng.html     |    72 +
+ .../help/specification.html                        |  1273 +
+ .../normalizza_area_regioni.m                      |    20 +
+ .../project/Debug/BgEdge.obj                       |   Bin 0 -> 8623 bytes
+ .../project/Debug/BgEdgeList.obj                   |   Bin 0 -> 15498 bytes
+ .../project/Debug/BgGlobalFc.obj                   |   Bin 0 -> 24125 bytes
+ .../project/Debug/BgImage.obj                      |   Bin 0 -> 21942 bytes
+ .../project/Debug/CL.read.1.tlog                   |   Bin 0 -> 21276 bytes
+ .../project/Debug/CL.write.1.tlog                  |   Bin 0 -> 10442 bytes
+ .../project/Debug/EDISON.lastbuildstate            |     2 +
+ .../project/Debug/EDISON.log                       |    59 +
+ .../project/Debug/EDISON.unsuccessfulbuild         |     0
+ .../project/Debug/RAList.obj                       |   Bin 0 -> 6212 bytes
+ .../project/Debug/cl.command.1.tlog                |   Bin 0 -> 15108 bytes
+ .../edison_matlab_interface/project/Debug/ms.obj   |   Bin 0 -> 54836 bytes
+ .../project/Debug/msImageProcessor.obj             |   Bin 0 -> 96733 bytes
+ .../project/Debug/msSys.obj                        |   Bin 0 -> 8324 bytes
+ .../project/Debug/rlist.obj                        |   Bin 0 -> 11974 bytes
+ .../project/Debug/vc100.idb                        |   Bin 0 -> 125952 bytes
+ .../project/Debug/vc100.pdb                        |   Bin 0 -> 77824 bytes
+ .../edison_matlab_interface/project/EDISON.001     |   391 +
+ .../edison_matlab_interface/project/EDISON.APS     |   Bin 0 -> 117652 bytes
+ .../edison_matlab_interface/project/EDISON.DSP     |   447 +
+ .../edison_matlab_interface/project/EDISON.DSW     |    29 +
+ .../edison_matlab_interface/project/EDISON.OPT     |   Bin 0 -> 56832 bytes
+ .../edison_matlab_interface/project/EDISON.PLG     |    37 +
+ .../edison_matlab_interface/project/EDISON.ncb     |   Bin 0 -> 533504 bytes
+ .../edison_matlab_interface/project/EDISON.sdf     |   Bin 0 -> 2969600 bytes
+ .../edison_matlab_interface/project/EDISON.sln     |    26 +
+ .../edison_matlab_interface/project/EDISON.suo     |   Bin 0 -> 15872 bytes
+ .../edison_matlab_interface/project/EDISON.vcxproj |   316 +
+ .../project/EDISON.vcxproj.filters                 |   246 +
+ .../project/EDISON.vcxproj.user                    |     3 +
+ .../edison_matlab_interface/project/edison.rc      |    33 +
+ .../edison_matlab_interface/project/filelog.txt    |    56 +
+ .../ipch/edison-1aeac89e/edison-f178d9f8.ipch      |   Bin 0 -> 2359296 bytes
+ .../edison_matlab_interface/prompt/defs.h          |   424 +
+ .../edison_matlab_interface/prompt/edison.cpp      |   637 +
+ .../edison_matlab_interface/prompt/edison.h        |    88 +
+ .../edison_matlab_interface/prompt/error.h         |    31 +
+ .../edison_matlab_interface/prompt/flags.h         |    29 +
+ .../edison_matlab_interface/prompt/globalFnc.cpp   |  1258 +
+ .../edison_matlab_interface/prompt/imfilt.h        |    11 +
+ .../edison_matlab_interface/prompt/libppm.cpp      |   152 +
+ .../edison_matlab_interface/prompt/libppm.h        |    31 +
+ .../edison_matlab_interface/prompt/main.cpp        |    67 +
+ .../edison_matlab_interface/prompt/parser.cpp      |   236 +
+ .../edison_matlab_interface/prompt/parser.h        |    66 +
+ .../composition/edison_matlab_interface/readme.txt |   183 +
+ .../edison_matlab_interface/segm/MSReadme.txt      |   176 +
+ .../edison_matlab_interface/segm/RAList.cpp        |   172 +
+ .../edison_matlab_interface/segm/RAList.h          |    92 +
+ .../edison_matlab_interface/segm/ms.cpp            |  2465 ++
+ .../composition/edison_matlab_interface/segm/ms.h  |   926 +
+ .../segm/msImageProcessor.cpp                      |  4674 +++
+ .../segm/msImageProcessor.h                        |   798 +
+ .../edison_matlab_interface/segm/msSys.cpp         |   234 +
+ .../edison_matlab_interface/segm/msSys.h           |   229 +
+ .../edison_matlab_interface/segm/msSysPrompt.cpp   |   232 +
+ .../edison_matlab_interface/segm/rlist.cpp         |   339 +
+ .../edison_matlab_interface/segm/rlist.h           |   337 +
+ .../edison_matlab_interface/segm/tdef.h            |    51 +
+ .../composition/low_depth_of_field_indicators.m    |    81 +
+ feature_extraction/composition/trt.m               |    11 +
+ feature_extraction/feat.m                          |    88 +
+ feature_extraction/features_immagine.m             |   116 +
+ .../img/u1/14456399268_373c51f56b_k.jpg            |   Bin 0 -> 1227304 bytes
+ .../img/u1/14456399268_70f1654a43_o.jpg            |   Bin 0 -> 12385712 bytes
+ .../img/u1/33921243534_8236bc668f_o.jpg            |   Bin 0 -> 4601604 bytes
+ .../img/u1/4072688784_5dd8355fcd_o.jpg             |   Bin 0 -> 4352599 bytes
+ .../img/u2/14356956867_8dc27a8ce7_o.jpg            |   Bin 0 -> 2476288 bytes
+ .../img/u2/17222127179_813fc7ca1e_o.jpg            |   Bin 0 -> 9833901 bytes
+ .../img/u2/30112864715_459bf9db75_o.jpg            |   Bin 0 -> 6103302 bytes
+ .../img/u2/34085389904_6578356a26_o.jpg            |   Bin 0 -> 6160423 bytes
+ .../img/u2/35116816976_b476d029c4_o.jpg            |   Bin 0 -> 2900171 bytes
+ .../img/u2/5518521150_1310491cb7_o.jpg             |   Bin 0 -> 174418 bytes
+ .../img/u3/13956532236_005142388d_o.jpg            |   Bin 0 -> 3289700 bytes
+ .../img/u3/17471491382_04e7f2b894_o.jpg            |   Bin 0 -> 368627 bytes
+ .../img/u3/34537684706_84c8f51521_k.jpg            |   Bin 0 -> 1495205 bytes
+ .../img/u3/34767217536_275bcde7d9_k.jpg            |   Bin 0 -> 1716056 bytes
+ .../img/u3/5691275188_af7a069447_b.jpg             |   Bin 0 -> 884727 bytes
+ .../img/u3/5691275188_c1fee53cfd_o.jpg             |   Bin 0 -> 10239889 bytes
+ .../img/u3/7636857962_deb7c56f8b_o.jpg             |   Bin 0 -> 1854006 bytes
+ .../img/u4/14336071644_983c536188_k.jpg            |   Bin 0 -> 1190394 bytes
+ .../img/u4/17295236492_72933b514d_k.jpg            |   Bin 0 -> 623254 bytes
+ .../img/u4/33658571673_cc99bba09f_o.jpg            |   Bin 0 -> 957917 bytes
+ .../img/u4/34472208666_38e87a5762_k.jpg            |   Bin 0 -> 962142 bytes
+ .../img/u4/34812012222_43d81a274f_o.jpg            |   Bin 0 -> 188569 bytes
+ .../img/u4/7134228499_d736c55ff9_o.jpg             |   Bin 0 -> 194058 bytes
+ .../img/u4/8347221453_45dd8810f4_o.jpg             |   Bin 0 -> 148851 bytes
+ feature_extraction/main.m                          |    55 +
+ feature_extraction/objects/detection/detection.m   |    58 +
+ .../objects/detection/voc-win/000034.jpg           |   Bin 0 -> 33688 bytes
+ .../objects/detection/voc-win/000061.jpg           |   Bin 0 -> 43224 bytes
+ .../objects/detection/voc-win/000084.jpg           |   Bin 0 -> 38547 bytes
+ .../objects/detection/voc-win/COPYING              |    21 +
+ .../objects/detection/voc-win/HOGpicture.m         |    27 +
+ .../detection/voc-win/INRIA/inriaperson_final.mat  |   Bin 0 -> 182151 bytes
+ .../objects/detection/voc-win/Makefile             |     8 +
+ .../objects/detection/voc-win/README               |   168 +
+ .../detection/voc-win/VOC2006/bicycle_final.mat    |   Bin 0 -> 552414 bytes
+ .../voc-win/VOC2006/bicycle_rescore_classifier.mat |   Bin 0 -> 10332 bytes
+ .../detection/voc-win/VOC2006/bus_final.mat        |   Bin 0 -> 550798 bytes
+ .../voc-win/VOC2006/bus_rescore_classifier.mat     |   Bin 0 -> 58361 bytes
+ .../detection/voc-win/VOC2006/car_final.mat        |   Bin 0 -> 523807 bytes
+ .../voc-win/VOC2006/car_rescore_classifier.mat     |   Bin 0 -> 19311 bytes
+ .../detection/voc-win/VOC2006/cat_final.mat        |   Bin 0 -> 547471 bytes
+ .../voc-win/VOC2006/cat_rescore_classifier.mat     |   Bin 0 -> 20817 bytes
+ .../detection/voc-win/VOC2006/cow_final.mat        |   Bin 0 -> 551014 bytes
+ .../voc-win/VOC2006/cow_rescore_classifier.mat     |   Bin 0 -> 75857 bytes
+ .../detection/voc-win/VOC2006/dog_final.mat        |   Bin 0 -> 549935 bytes
+ .../voc-win/VOC2006/dog_rescore_classifier.mat     |   Bin 0 -> 22959 bytes
+ .../detection/voc-win/VOC2006/horse_final.mat      |   Bin 0 -> 552455 bytes
+ .../voc-win/VOC2006/horse_rescore_classifier.mat   |   Bin 0 -> 33523 bytes
+ .../detection/voc-win/VOC2006/motorbike_final.mat  |   Bin 0 -> 555192 bytes
+ .../VOC2006/motorbike_rescore_classifier.mat       |   Bin 0 -> 170473 bytes
+ .../detection/voc-win/VOC2006/person_final.mat     |   Bin 0 -> 514398 bytes
+ .../voc-win/VOC2006/person_rescore_classifier.mat  |   Bin 0 -> 82550 bytes
+ .../detection/voc-win/VOC2006/sheep_final.mat      |   Bin 0 -> 537565 bytes
+ .../voc-win/VOC2006/sheep_rescore_classifier.mat   |   Bin 0 -> 82258 bytes
+ .../detection/voc-win/VOC2007/aeroplane_final.mat  |   Bin 0 -> 514465 bytes
+ .../VOC2007/aeroplane_rescore_classifier.mat       |   Bin 0 -> 21635 bytes
+ .../detection/voc-win/VOC2007/bicycle_final.mat    |   Bin 0 -> 545712 bytes
+ .../voc-win/VOC2007/bicycle_rescore_classifier.mat |   Bin 0 -> 34569 bytes
+ .../detection/voc-win/VOC2007/bird_final.mat       |   Bin 0 -> 517857 bytes
+ .../voc-win/VOC2007/bird_rescore_classifier.mat    |   Bin 0 -> 47715 bytes
+ .../detection/voc-win/VOC2007/boat_final.mat       |   Bin 0 -> 514092 bytes
+ .../voc-win/VOC2007/boat_rescore_classifier.mat    |   Bin 0 -> 86197 bytes
+ .../detection/voc-win/VOC2007/bottle_final.mat     |   Bin 0 -> 507550 bytes
+ .../voc-win/VOC2007/bottle_rescore_classifier.mat  |   Bin 0 -> 113771 bytes
+ .../detection/voc-win/VOC2007/bus_final.mat        |   Bin 0 -> 548656 bytes
+ .../voc-win/VOC2007/bus_rescore_classifier.mat     |   Bin 0 -> 147035 bytes
+ .../detection/voc-win/VOC2007/car_final.mat        |   Bin 0 -> 505709 bytes
+ .../voc-win/VOC2007/car_rescore_classifier.mat     |   Bin 0 -> 86761 bytes
+ .../detection/voc-win/VOC2007/cat_final.mat        |   Bin 0 -> 547722 bytes
+ .../voc-win/VOC2007/cat_rescore_classifier.mat     |   Bin 0 -> 93193 bytes
+ .../detection/voc-win/VOC2007/chair_final.mat      |   Bin 0 -> 547351 bytes
+ .../voc-win/VOC2007/chair_rescore_classifier.mat   |   Bin 0 -> 210892 bytes
+ .../detection/voc-win/VOC2007/cow_final.mat        |   Bin 0 -> 543344 bytes
+ .../voc-win/VOC2007/cow_rescore_classifier.mat     |   Bin 0 -> 72192 bytes
+ .../voc-win/VOC2007/diningtable_final.mat          |   Bin 0 -> 552945 bytes
+ .../VOC2007/diningtable_rescore_classifier.mat     |   Bin 0 -> 78957 bytes
+ .../detection/voc-win/VOC2007/dog_final.mat        |   Bin 0 -> 547688 bytes
+ .../voc-win/VOC2007/dog_rescore_classifier.mat     |   Bin 0 -> 64648 bytes
+ .../detection/voc-win/VOC2007/horse_final.mat      |   Bin 0 -> 536804 bytes
+ .../voc-win/VOC2007/horse_rescore_classifier.mat   |   Bin 0 -> 67010 bytes
+ .../detection/voc-win/VOC2007/motorbike_final.mat  |   Bin 0 -> 540984 bytes
+ .../VOC2007/motorbike_rescore_classifier.mat       |   Bin 0 -> 64083 bytes
+ .../detection/voc-win/VOC2007/person_final.mat     |   Bin 0 -> 518014 bytes
+ .../voc-win/VOC2007/person_rescore_classifier.mat  |   Bin 0 -> 429181 bytes
+ .../voc-win/VOC2007/pottedplant_final.mat          |   Bin 0 -> 496939 bytes
+ .../VOC2007/pottedplant_rescore_classifier.mat     |   Bin 0 -> 51396 bytes
+ .../detection/voc-win/VOC2007/sheep_final.mat      |   Bin 0 -> 498123 bytes
+ .../voc-win/VOC2007/sheep_rescore_classifier.mat   |   Bin 0 -> 124020 bytes
+ .../detection/voc-win/VOC2007/sofa_final.mat       |   Bin 0 -> 548760 bytes
+ .../voc-win/VOC2007/sofa_rescore_classifier.mat    |   Bin 0 -> 333193 bytes
+ .../detection/voc-win/VOC2007/train_final.mat      |   Bin 0 -> 544559 bytes
+ .../voc-win/VOC2007/train_rescore_classifier.mat   |   Bin 0 -> 38977 bytes
+ .../detection/voc-win/VOC2007/tvmonitor_final.mat  |   Bin 0 -> 538394 bytes
+ .../VOC2007/tvmonitor_rescore_classifier.mat       |   Bin 0 -> 104019 bytes
+ .../detection/voc-win/VOC2009/aeroplane_final.mat  |   Bin 0 -> 531727 bytes
+ .../VOC2009/aeroplane_rescore_classifier.mat       |   Bin 0 -> 95329 bytes
+ .../detection/voc-win/VOC2009/bicycle_final.mat    |   Bin 0 -> 549824 bytes
+ .../voc-win/VOC2009/bicycle_rescore_classifier.mat |   Bin 0 -> 55853 bytes
+ .../detection/voc-win/VOC2009/bird_final.mat       |   Bin 0 -> 516968 bytes
+ .../voc-win/VOC2009/bird_rescore_classifier.mat    |   Bin 0 -> 90049 bytes
+ .../detection/voc-win/VOC2009/boat_final.mat       |   Bin 0 -> 507723 bytes
+ .../voc-win/VOC2009/boat_rescore_classifier.mat    |   Bin 0 -> 71181 bytes
+ .../detection/voc-win/VOC2009/bottle_final.mat     |   Bin 0 -> 508290 bytes
+ .../voc-win/VOC2009/bottle_rescore_classifier.mat  |   Bin 0 -> 137442 bytes
+ .../detection/voc-win/VOC2009/bus_final.mat        |   Bin 0 -> 536985 bytes
+ .../voc-win/VOC2009/bus_rescore_classifier.mat     |   Bin 0 -> 79123 bytes
+ .../detection/voc-win/VOC2009/car_final.mat        |   Bin 0 -> 509664 bytes
+ .../voc-win/VOC2009/car_rescore_classifier.mat     |   Bin 0 -> 666926 bytes
+ .../detection/voc-win/VOC2009/cat_final.mat        |   Bin 0 -> 551384 bytes
+ .../voc-win/VOC2009/cat_rescore_classifier.mat     |   Bin 0 -> 182670 bytes
+ .../detection/voc-win/VOC2009/chair_final.mat      |   Bin 0 -> 547020 bytes
+ .../voc-win/VOC2009/chair_rescore_classifier.mat   |   Bin 0 -> 239669 bytes
+ .../detection/voc-win/VOC2009/cow_final.mat        |   Bin 0 -> 516662 bytes
+ .../voc-win/VOC2009/cow_rescore_classifier.mat     |   Bin 0 -> 150046 bytes
+ .../voc-win/VOC2009/diningtable_final.mat          |   Bin 0 -> 544450 bytes
+ .../VOC2009/diningtable_rescore_classifier.mat     |   Bin 0 -> 103706 bytes
+ .../detection/voc-win/VOC2009/dog_final.mat        |   Bin 0 -> 549073 bytes
+ .../voc-win/VOC2009/dog_rescore_classifier.mat     |   Bin 0 -> 157459 bytes
+ .../detection/voc-win/VOC2009/horse_final.mat      |   Bin 0 -> 554169 bytes
+ .../voc-win/VOC2009/horse_rescore_classifier.mat   |   Bin 0 -> 119350 bytes
+ .../detection/voc-win/VOC2009/motorbike_final.mat  |   Bin 0 -> 544384 bytes
+ .../VOC2009/motorbike_rescore_classifier.mat       |   Bin 0 -> 88593 bytes
+ .../detection/voc-win/VOC2009/person_final.mat     |   Bin 0 -> 540593 bytes
+ .../voc-win/VOC2009/person_rescore_classifier.mat  |   Bin 0 -> 540089 bytes
+ .../voc-win/VOC2009/pottedplant_final.mat          |   Bin 0 -> 505468 bytes
+ .../VOC2009/pottedplant_rescore_classifier.mat     |   Bin 0 -> 680382 bytes
+ .../detection/voc-win/VOC2009/sheep_final.mat      |   Bin 0 -> 499003 bytes
+ .../voc-win/VOC2009/sheep_rescore_classifier.mat   |   Bin 0 -> 35122 bytes
+ .../detection/voc-win/VOC2009/sofa_final.mat       |   Bin 0 -> 547861 bytes
+ .../voc-win/VOC2009/sofa_rescore_classifier.mat    |   Bin 0 -> 351030 bytes
+ .../detection/voc-win/VOC2009/train_final.mat      |   Bin 0 -> 551867 bytes
+ .../voc-win/VOC2009/train_rescore_classifier.mat   |   Bin 0 -> 139492 bytes
+ .../detection/voc-win/VOC2009/tvmonitor_final.mat  |   Bin 0 -> 523241 bytes
+ .../VOC2009/tvmonitor_rescore_classifier.mat       |   Bin 0 -> 158350 bytes
+ .../objects/detection/voc-win/bboxpred_data.m      |    61 +
+ .../objects/detection/voc-win/bboxpred_get.m       |    36 +
+ .../objects/detection/voc-win/bboxpred_input.m     |    31 +
+ .../objects/detection/voc-win/bboxpred_rescore.m   |    67 +
+ .../objects/detection/voc-win/bboxpred_train.m     |    64 +
+ .../objects/detection/voc-win/boxoverlap.m         |    23 +
+ .../objects/detection/voc-win/changelog            |     6 +
+ .../objects/detection/voc-win/clipboxes.m          |    25 +
+ .../objects/detection/voc-win/color.m              |    12 +
+ .../objects/detection/voc-win/compile.asv          |    24 +
+ .../objects/detection/voc-win/compile.m            |    25 +
+ .../objects/detection/voc-win/croppos.m            |    19 +
+ .../objects/detection/voc-win/demo.m               |    46 +
+ .../objects/detection/voc-win/documentation.txt    |   131 +
+ feature_extraction/objects/detection/voc-win/dt.cc |    91 +
+ .../objects/detection/voc-win/dt.mexw64            |   Bin 0 -> 9728 bytes
+ .../objects/detection/voc-win/fconv.cc             |   130 +
+ .../objects/detection/voc-win/fconv.mexw64         |   Bin 0 -> 10240 bytes
+ .../objects/detection/voc-win/fconvMT.cc           |   143 +
+ .../objects/detection/voc-win/fconvblas.cc         |   132 +
+ .../objects/detection/voc-win/fconvblasMT.cc       |   143 +
+ .../objects/detection/voc-win/fconvsse.cc          |   216 +
+ .../objects/detection/voc-win/featpyramid.m        |    54 +
+ .../objects/detection/voc-win/features.cc          |   238 +
+ .../objects/detection/voc-win/features.mexw64      |   Bin 0 -> 12288 bytes
+ .../objects/detection/voc-win/flipfeat.m           |    10 +
+ .../objects/detection/voc-win/foldHOG.m            |     7 +
+ .../objects/detection/voc-win/gdetect.m            |   385 +
+ .../objects/detection/voc-win/gdetectwrite.m       |   165 +
+ .../objects/detection/voc-win/getcontextlabels.m   |    80 +
+ .../objects/detection/voc-win/getdetections.cc     |   314 +
+ .../objects/detection/voc-win/getdetections.mexw64 |   Bin 0 -> 12288 bytes
+ .../objects/detection/voc-win/getpadding.m         |     7 +
+ .../objects/detection/voc-win/globals.m            |    38 +
+ .../objects/detection/voc-win/imgdetect.m          |    25 +
+ .../objects/detection/voc-win/imreadx.m            |    10 +
+ .../objects/detection/voc-win/initmodel.m          |    63 +
+ .../objects/detection/voc-win/initrand.m           |    10 +
+ .../objects/detection/voc-win/labeldata.m          |    36 +
+ .../objects/detection/voc-win/learn.cc             |   638 +
+ .../objects/detection/voc-win/lrmodel.m            |    37 +
+ .../objects/detection/voc-win/lrsplit.m            |   145 +
+ .../objects/detection/voc-win/mergemodels.m        |    63 +
+ .../objects/detection/voc-win/mkpartfilters.m      |   110 +
+ .../objects/detection/voc-win/model_addblock.m     |    30 +
+ .../objects/detection/voc-win/model_addfilter.m    |    53 +
+ .../detection/voc-win/model_addmirroredfilter.m    |    11 +
+ .../detection/voc-win/model_addnonterminal.m       |     6 +
+ .../objects/detection/voc-win/model_addparts.m     |    60 +
+ .../objects/detection/voc-win/model_addrule.m      |    76 +
+ .../objects/detection/voc-win/model_addsymbol.m    |    11 +
+ .../objects/detection/voc-win/model_create.m       |    31 +
+ .../objects/detection/voc-win/model_setdetwindow.m |    11 +
+ .../objects/detection/voc-win/model_sort.m         |    35 +
+ feature_extraction/objects/detection/voc-win/nms.m |    43 +
+ .../objects/detection/voc-win/parsemodel.m         |    45 +
+ .../objects/detection/voc-win/pascal.m             |    44 +
+ .../objects/detection/voc-win/pascal_data.m        |    71 +
+ .../objects/detection/voc-win/pascal_eval.m        |    40 +
+ .../objects/detection/voc-win/pascal_init.m        |     7 +
+ .../objects/detection/voc-win/pascal_test.m        |    50 +
+ .../objects/detection/voc-win/pascal_train.m       |    80 +
+ .../objects/detection/voc-win/process.m            |    29 +
+ .../objects/detection/voc-win/procid.m             |     6 +
+ .../objects/detection/voc-win/readinfo.m           |     7 +
+ .../objects/detection/voc-win/readmodel.m          |    11 +
+ .../objects/detection/voc-win/reduceboxes.m        |    34 +
+ .../objects/detection/voc-win/release4-notes.pdf   |   Bin 0 -> 702015 bytes
+ .../objects/detection/voc-win/rescore_data.m       |    90 +
+ .../objects/detection/voc-win/rescore_labels.m     |    88 +
+ .../objects/detection/voc-win/rescore_test.m       |    33 +
+ .../objects/detection/voc-win/rescore_train.m      |    33 +
+ .../objects/detection/voc-win/resize.asv           |   121 +
+ .../objects/detection/voc-win/resize.cc            |   121 +
+ .../objects/detection/voc-win/resize.mexw64        |   Bin 0 -> 9728 bytes
+ .../objects/detection/voc-win/rewritedat.m         |    55 +
+ .../objects/detection/voc-win/rules_with_lhs.m     |     7 +
+ .../objects/detection/voc-win/showboxes.m          |    84 +
+ .../objects/detection/voc-win/split.m              |    25 +
+ .../objects/detection/voc-win/subarray.m           |    24 +
+ .../objects/detection/voc-win/train.m              |   449 +
+ .../objects/detection/voc-win/trainval.m           |    26 +
+ .../objects/detection/voc-win/visualizeHOG.m       |    28 +
+ .../objects/detection/voc-win/visualizemodel.m     |   117 +
+ .../objects/detection/voc-win/warppos.m            |    28 +
+ .../objects/detection/voc-win/writecomponentinfo.m |    50 +
+ .../objects/detection/voc-win/writeheader.m        |    12 +
+ .../objects/detection/voc-win/writelob.m           |    11 +
+ .../objects/detection/voc-win/writemodel.m         |    45 +
+ .../objects/detection/voc/000034.jpg               |   Bin 0 -> 33688 bytes
+ .../objects/detection/voc/000061.jpg               |   Bin 0 -> 43224 bytes
+ .../objects/detection/voc/000084.jpg               |   Bin 0 -> 38547 bytes
+ feature_extraction/objects/detection/voc/COPYING   |    21 +
+ .../objects/detection/voc/HOGpicture.m             |    27 +
+ .../detection/voc/INRIA/inriaperson_final.mat      |   Bin 0 -> 182151 bytes
+ feature_extraction/objects/detection/voc/Makefile  |     8 +
+ feature_extraction/objects/detection/voc/README    |   168 +
+ .../detection/voc/VOC2006/bicycle_final.mat        |   Bin 0 -> 552414 bytes
+ .../voc/VOC2006/bicycle_rescore_classifier.mat     |   Bin 0 -> 10332 bytes
+ .../objects/detection/voc/VOC2006/bus_final.mat    |   Bin 0 -> 550798 bytes
+ .../voc/VOC2006/bus_rescore_classifier.mat         |   Bin 0 -> 58361 bytes
+ .../objects/detection/voc/VOC2006/car_final.mat    |   Bin 0 -> 523807 bytes
+ .../voc/VOC2006/car_rescore_classifier.mat         |   Bin 0 -> 19311 bytes
+ .../objects/detection/voc/VOC2006/cat_final.mat    |   Bin 0 -> 547471 bytes
+ .../voc/VOC2006/cat_rescore_classifier.mat         |   Bin 0 -> 20817 bytes
+ .../objects/detection/voc/VOC2006/cow_final.mat    |   Bin 0 -> 551014 bytes
+ .../voc/VOC2006/cow_rescore_classifier.mat         |   Bin 0 -> 75857 bytes
+ .../objects/detection/voc/VOC2006/dog_final.mat    |   Bin 0 -> 549935 bytes
+ .../voc/VOC2006/dog_rescore_classifier.mat         |   Bin 0 -> 22959 bytes
+ .../objects/detection/voc/VOC2006/horse_final.mat  |   Bin 0 -> 552455 bytes
+ .../voc/VOC2006/horse_rescore_classifier.mat       |   Bin 0 -> 33523 bytes
+ .../detection/voc/VOC2006/motorbike_final.mat      |   Bin 0 -> 555192 bytes
+ .../voc/VOC2006/motorbike_rescore_classifier.mat   |   Bin 0 -> 170473 bytes
+ .../objects/detection/voc/VOC2006/person_final.mat |   Bin 0 -> 514398 bytes
+ .../voc/VOC2006/person_rescore_classifier.mat      |   Bin 0 -> 82550 bytes
+ .../objects/detection/voc/VOC2006/sheep_final.mat  |   Bin 0 -> 537565 bytes
+ .../voc/VOC2006/sheep_rescore_classifier.mat       |   Bin 0 -> 82258 bytes
+ .../detection/voc/VOC2007/aeroplane_final.mat      |   Bin 0 -> 514465 bytes
+ .../voc/VOC2007/aeroplane_rescore_classifier.mat   |   Bin 0 -> 21635 bytes
+ .../detection/voc/VOC2007/bicycle_final.mat        |   Bin 0 -> 545712 bytes
+ .../voc/VOC2007/bicycle_rescore_classifier.mat     |   Bin 0 -> 34569 bytes
+ .../objects/detection/voc/VOC2007/bird_final.mat   |   Bin 0 -> 517857 bytes
+ .../voc/VOC2007/bird_rescore_classifier.mat        |   Bin 0 -> 47715 bytes
+ .../objects/detection/voc/VOC2007/boat_final.mat   |   Bin 0 -> 514092 bytes
+ .../voc/VOC2007/boat_rescore_classifier.mat        |   Bin 0 -> 86197 bytes
+ .../objects/detection/voc/VOC2007/bottle_final.mat |   Bin 0 -> 507550 bytes
+ .../voc/VOC2007/bottle_rescore_classifier.mat      |   Bin 0 -> 113771 bytes
+ .../objects/detection/voc/VOC2007/bus_final.mat    |   Bin 0 -> 548656 bytes
+ .../voc/VOC2007/bus_rescore_classifier.mat         |   Bin 0 -> 147035 bytes
+ .../objects/detection/voc/VOC2007/car_final.mat    |   Bin 0 -> 505709 bytes
+ .../voc/VOC2007/car_rescore_classifier.mat         |   Bin 0 -> 86761 bytes
+ .../objects/detection/voc/VOC2007/cat_final.mat    |   Bin 0 -> 547722 bytes
+ .../voc/VOC2007/cat_rescore_classifier.mat         |   Bin 0 -> 93193 bytes
+ .../objects/detection/voc/VOC2007/chair_final.mat  |   Bin 0 -> 547351 bytes
+ .../voc/VOC2007/chair_rescore_classifier.mat       |   Bin 0 -> 210892 bytes
+ .../objects/detection/voc/VOC2007/cow_final.mat    |   Bin 0 -> 543344 bytes
+ .../voc/VOC2007/cow_rescore_classifier.mat         |   Bin 0 -> 72192 bytes
+ .../detection/voc/VOC2007/diningtable_final.mat    |   Bin 0 -> 552945 bytes
+ .../voc/VOC2007/diningtable_rescore_classifier.mat |   Bin 0 -> 78957 bytes
+ .../objects/detection/voc/VOC2007/dog_final.mat    |   Bin 0 -> 547688 bytes
+ .../voc/VOC2007/dog_rescore_classifier.mat         |   Bin 0 -> 64648 bytes
+ .../objects/detection/voc/VOC2007/horse_final.mat  |   Bin 0 -> 536804 bytes
+ .../voc/VOC2007/horse_rescore_classifier.mat       |   Bin 0 -> 67010 bytes
+ .../detection/voc/VOC2007/motorbike_final.mat      |   Bin 0 -> 540984 bytes
+ .../voc/VOC2007/motorbike_rescore_classifier.mat   |   Bin 0 -> 64083 bytes
+ .../objects/detection/voc/VOC2007/person_final.mat |   Bin 0 -> 518014 bytes
+ .../voc/VOC2007/person_rescore_classifier.mat      |   Bin 0 -> 429181 bytes
+ .../detection/voc/VOC2007/pottedplant_final.mat    |   Bin 0 -> 496939 bytes
+ .../voc/VOC2007/pottedplant_rescore_classifier.mat |   Bin 0 -> 51396 bytes
+ .../objects/detection/voc/VOC2007/sheep_final.mat  |   Bin 0 -> 498123 bytes
+ .../voc/VOC2007/sheep_rescore_classifier.mat       |   Bin 0 -> 124020 bytes
+ .../objects/detection/voc/VOC2007/sofa_final.mat   |   Bin 0 -> 548760 bytes
+ .../voc/VOC2007/sofa_rescore_classifier.mat        |   Bin 0 -> 333193 bytes
+ .../objects/detection/voc/VOC2007/train_final.mat  |   Bin 0 -> 544559 bytes
+ .../voc/VOC2007/train_rescore_classifier.mat       |   Bin 0 -> 38977 bytes
+ .../detection/voc/VOC2007/tvmonitor_final.mat      |   Bin 0 -> 538394 bytes
+ .../voc/VOC2007/tvmonitor_rescore_classifier.mat   |   Bin 0 -> 104019 bytes
+ .../detection/voc/VOC2009/aeroplane_final.mat      |   Bin 0 -> 531727 bytes
+ .../voc/VOC2009/aeroplane_rescore_classifier.mat   |   Bin 0 -> 95329 bytes
+ .../detection/voc/VOC2009/bicycle_final.mat        |   Bin 0 -> 549824 bytes
+ .../voc/VOC2009/bicycle_rescore_classifier.mat     |   Bin 0 -> 55853 bytes
+ .../objects/detection/voc/VOC2009/bird_final.mat   |   Bin 0 -> 516968 bytes
+ .../voc/VOC2009/bird_rescore_classifier.mat        |   Bin 0 -> 90049 bytes
+ .../objects/detection/voc/VOC2009/boat_final.mat   |   Bin 0 -> 507723 bytes
+ .../voc/VOC2009/boat_rescore_classifier.mat        |   Bin 0 -> 71181 bytes
+ .../objects/detection/voc/VOC2009/bottle_final.mat |   Bin 0 -> 508290 bytes
+ .../voc/VOC2009/bottle_rescore_classifier.mat      |   Bin 0 -> 137442 bytes
+ .../objects/detection/voc/VOC2009/bus_final.mat    |   Bin 0 -> 536985 bytes
+ .../voc/VOC2009/bus_rescore_classifier.mat         |   Bin 0 -> 79123 bytes
+ .../objects/detection/voc/VOC2009/car_final.mat    |   Bin 0 -> 509664 bytes
+ .../voc/VOC2009/car_rescore_classifier.mat         |   Bin 0 -> 666926 bytes
+ .../objects/detection/voc/VOC2009/cat_final.mat    |   Bin 0 -> 551384 bytes
+ .../voc/VOC2009/cat_rescore_classifier.mat         |   Bin 0 -> 182670 bytes
+ .../objects/detection/voc/VOC2009/chair_final.mat  |   Bin 0 -> 547020 bytes
+ .../voc/VOC2009/chair_rescore_classifier.mat       |   Bin 0 -> 239669 bytes
+ .../objects/detection/voc/VOC2009/cow_final.mat    |   Bin 0 -> 516662 bytes
+ .../voc/VOC2009/cow_rescore_classifier.mat         |   Bin 0 -> 150046 bytes
+ .../detection/voc/VOC2009/diningtable_final.mat    |   Bin 0 -> 544450 bytes
+ .../voc/VOC2009/diningtable_rescore_classifier.mat |   Bin 0 -> 103706 bytes
+ .../objects/detection/voc/VOC2009/dog_final.mat    |   Bin 0 -> 549073 bytes
+ .../voc/VOC2009/dog_rescore_classifier.mat         |   Bin 0 -> 157459 bytes
+ .../objects/detection/voc/VOC2009/horse_final.mat  |   Bin 0 -> 554169 bytes
+ .../voc/VOC2009/horse_rescore_classifier.mat       |   Bin 0 -> 119350 bytes
+ .../detection/voc/VOC2009/motorbike_final.mat      |   Bin 0 -> 544384 bytes
+ .../voc/VOC2009/motorbike_rescore_classifier.mat   |   Bin 0 -> 88593 bytes
+ .../objects/detection/voc/VOC2009/oggetti.txt      |     0
+ .../objects/detection/voc/VOC2009/person_final.mat |   Bin 0 -> 540593 bytes
+ .../voc/VOC2009/person_rescore_classifier.mat      |   Bin 0 -> 540089 bytes
+ .../detection/voc/VOC2009/pottedplant_final.mat    |   Bin 0 -> 505468 bytes
+ .../voc/VOC2009/pottedplant_rescore_classifier.mat |   Bin 0 -> 680382 bytes
+ .../objects/detection/voc/VOC2009/sheep_final.mat  |   Bin 0 -> 499003 bytes
+ .../voc/VOC2009/sheep_rescore_classifier.mat       |   Bin 0 -> 35122 bytes
+ .../objects/detection/voc/VOC2009/sofa_final.mat   |   Bin 0 -> 547861 bytes
+ .../voc/VOC2009/sofa_rescore_classifier.mat        |   Bin 0 -> 351030 bytes
+ .../objects/detection/voc/VOC2009/train_final.mat  |   Bin 0 -> 551867 bytes
+ .../voc/VOC2009/train_rescore_classifier.mat       |   Bin 0 -> 139492 bytes
+ .../detection/voc/VOC2009/tvmonitor_final.mat      |   Bin 0 -> 523241 bytes
+ .../voc/VOC2009/tvmonitor_rescore_classifier.mat   |   Bin 0 -> 158350 bytes
+ .../objects/detection/voc/bboxpred_data.m          |    61 +
+ .../objects/detection/voc/bboxpred_get.m           |    36 +
+ .../objects/detection/voc/bboxpred_input.m         |    31 +
+ .../objects/detection/voc/bboxpred_rescore.m       |    67 +
+ .../objects/detection/voc/bboxpred_train.m         |    64 +
+ .../objects/detection/voc/boxoverlap.m             |    23 +
+ feature_extraction/objects/detection/voc/changelog |     6 +
+ .../objects/detection/voc/clipboxes.m              |    25 +
+ feature_extraction/objects/detection/voc/color.m   |    12 +
+ feature_extraction/objects/detection/voc/compile.m |    24 +
+ feature_extraction/objects/detection/voc/croppos.m |    19 +
+ .../objects/detection/voc/dataset100-150.mat       |   Bin 0 -> 1854303 bytes
+ .../objects/detection/voc/datasetCRIS.mat          |   Bin 0 -> 1227818 bytes
+ .../objects/detection/voc/datasetCRIS1-99.mat      |   Bin 0 -> 1204134 bytes
+ feature_extraction/objects/detection/voc/demo.m    |    46 +
+ .../objects/detection/voc/documentation.txt        |   131 +
+ feature_extraction/objects/detection/voc/dt.cc     |    89 +
+ feature_extraction/objects/detection/voc/dt.mexglx |   Bin 0 -> 7306 bytes
+ feature_extraction/objects/detection/voc/dt.mexw64 |   Bin 0 -> 9728 bytes
+ feature_extraction/objects/detection/voc/fconv.cc  |   130 +
+ .../objects/detection/voc/fconv.mexglx             |   Bin 0 -> 12136 bytes
+ .../objects/detection/voc/fconv.mexw64             |   Bin 0 -> 10240 bytes
+ .../objects/detection/voc/fconvMT.cc               |   143 +
+ .../objects/detection/voc/fconvblas.cc             |   132 +
+ .../objects/detection/voc/fconvblasMT.cc           |   143 +
+ .../objects/detection/voc/fconvsse.cc              |   216 +
+ .../objects/detection/voc/featpyramid.m            |    54 +
+ .../objects/detection/voc/features.cc              |   238 +
+ .../objects/detection/voc/features.mexglx          |   Bin 0 -> 11777 bytes
+ .../objects/detection/voc/features.mexw64          |   Bin 0 -> 12288 bytes
+ .../objects/detection/voc/flipfeat.m               |    10 +
+ feature_extraction/objects/detection/voc/foldHOG.m |     7 +
+ feature_extraction/objects/detection/voc/gdetect.m |   385 +
+ .../objects/detection/voc/gdetectwrite.m           |   165 +
+ .../objects/detection/voc/getcontextlabels.m       |    80 +
+ .../objects/detection/voc/getdetections.cc         |   314 +
+ .../objects/detection/voc/getdetections.mexglx     |   Bin 0 -> 11588 bytes
+ .../objects/detection/voc/getdetections.mexw64     |   Bin 0 -> 12288 bytes
+ .../objects/detection/voc/getpadding.m             |     7 +
+ feature_extraction/objects/detection/voc/globals.m |    38 +
+ .../objects/detection/voc/hs_err_pid7328.log       |   268 +
+ .../objects/detection/voc/hs_err_pid9300.log       |   269 +
+ .../objects/detection/voc/imgdetect.m              |    25 +
+ feature_extraction/objects/detection/voc/imreadx.m |    10 +
+ .../objects/detection/voc/initmodel.m              |    63 +
+ .../objects/detection/voc/initrand.m               |    10 +
+ .../objects/detection/voc/labeldata.m              |    36 +
+ feature_extraction/objects/detection/voc/learn.cc  |   638 +
+ feature_extraction/objects/detection/voc/lrmodel.m |    37 +
+ feature_extraction/objects/detection/voc/lrsplit.m |   145 +
+ .../objects/detection/voc/matlab.mat               |   Bin 0 -> 706936 bytes
+ .../objects/detection/voc/matlab100-200.mat        |   Bin 0 -> 5573349 bytes
+ .../objects/detection/voc/mergemodels.m            |    63 +
+ .../objects/detection/voc/mkpartfilters.m          |   110 +
+ .../objects/detection/voc/model_addblock.m         |    30 +
+ .../objects/detection/voc/model_addfilter.m        |    53 +
+ .../detection/voc/model_addmirroredfilter.m        |    11 +
+ .../objects/detection/voc/model_addnonterminal.m   |     6 +
+ .../objects/detection/voc/model_addparts.m         |    60 +
+ .../objects/detection/voc/model_addrule.m          |    76 +
+ .../objects/detection/voc/model_addsymbol.m        |    11 +
+ .../objects/detection/voc/model_create.m           |    31 +
+ .../objects/detection/voc/model_setdetwindow.m     |    11 +
+ .../objects/detection/voc/model_sort.m             |    35 +
+ feature_extraction/objects/detection/voc/nms.m     |    43 +
+ .../objects/detection/voc/parsemodel.m             |    45 +
+ feature_extraction/objects/detection/voc/pascal.m  |    44 +
+ .../objects/detection/voc/pascal_data.m            |    71 +
+ .../objects/detection/voc/pascal_eval.m            |    40 +
+ .../objects/detection/voc/pascal_init.m            |     7 +
+ .../objects/detection/voc/pascal_test.m            |    50 +
+ .../objects/detection/voc/pascal_train.m           |    80 +
+ feature_extraction/objects/detection/voc/process.m |    29 +
+ feature_extraction/objects/detection/voc/procid.m  |     6 +
+ .../objects/detection/voc/readinfo.m               |     7 +
+ .../objects/detection/voc/readmodel.m              |    11 +
+ .../objects/detection/voc/reduceboxes.m            |    34 +
+ .../objects/detection/voc/release4-notes.pdf       |   Bin 0 -> 702015 bytes
+ .../objects/detection/voc/rescore_data.m           |    90 +
+ .../objects/detection/voc/rescore_labels.m         |    88 +
+ .../objects/detection/voc/rescore_test.m           |    33 +
+ .../objects/detection/voc/rescore_train.m          |    33 +
+ feature_extraction/objects/detection/voc/resize.cc |   121 +
+ .../objects/detection/voc/resize.mexglx            |   Bin 0 -> 11895 bytes
+ .../objects/detection/voc/resize.mexw64            |   Bin 0 -> 9728 bytes
+ .../objects/detection/voc/rewritedat.m             |    55 +
+ .../objects/detection/voc/rules_with_lhs.m         |     7 +
+ .../objects/detection/voc/showboxes.m              |    84 +
+ feature_extraction/objects/detection/voc/split.m   |    25 +
+ .../objects/detection/voc/subarray.m               |    24 +
+ feature_extraction/objects/detection/voc/train.m   |   449 +
+ .../objects/detection/voc/trainval.m               |    26 +
+ .../objects/detection/voc/visualizeHOG.m           |    28 +
+ .../objects/detection/voc/visualizemodel.m         |   117 +
+ feature_extraction/objects/detection/voc/warppos.m |    28 +
+ .../objects/detection/voc/writecomponentinfo.m     |    50 +
+ .../objects/detection/voc/writeheader.m            |    12 +
+ .../objects/detection/voc/writelob.m               |    11 +
+ .../objects/detection/voc/writemodel.m             |    45 +
+ feature_extraction/objects/face_detection.m        |    67 +
+ feature_extraction/texture/Tamura3Sigs.m           |   155 +
+ feature_extraction/texture/entropia.m              |    10 +
+ feature_extraction/texture/gistdescriptor/LMgist.m |   332 +
+ .../texture/gistdescriptor/gist_descriptor.m       |    30 +
+ .../texture/gistdescriptor/imresizecrop.m          |    28 +
+ feature_extraction/texture/greylev.m               |    21 +
+ feature_extraction/texture/info_tessitura.m        |    23 +
+ feature_extraction/texture/wavelet_features.m      |    36 +
+ 630 files changed, 120286 insertions(+)

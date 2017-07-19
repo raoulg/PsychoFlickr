@@ -4,9 +4,8 @@
 clear all
 close all
 clc
-
 % Folders of images - each user has one folder
-folders=dir('~/Downloads/PsychoFlickrImages2/');
+folders=dir('~/conAi/imgbasedtest/');
 folders={folders.name};
 folders=setdiff(folders,{'.','..','.DS_Store'})';
 num=length(folders);
@@ -23,7 +22,7 @@ for j=1:num
   tline = folders{j}; 
   % Create the path to read the user's photos 
   % utente is italian for user
-  path_utente= ['~/Downloads/PsychoFlickrImages2/' tline '/'];
+  path_utente= ['~/conAi/imgbasedtest/' tline '/'];
   photo_list = dir([path_utente '/*.jpg']);
   %%Read user photos
   for i=1:length(photo_list)
