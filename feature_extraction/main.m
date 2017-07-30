@@ -12,7 +12,6 @@ num=length(folders);
 %%
 % Instantiating the value matrix containing the computed features
 data=[];
-photonames = [];
 %  Label carrier instantiation
 labels=[];
 utente = 0;
@@ -28,7 +27,7 @@ for j=1:num
   %%Read user photos
   for i=1:length(photo_list)
    % read the picture
-       tic
+        tic
        clc
       immagine_elaborata= imread([path_utente photo_list(i).name]);
       [rows columns numberOfColorBands] = size(immagine_elaborata); 
@@ -43,10 +42,11 @@ for j=1:num
       %% Update the label vector
       labels= [labels utente];
   end
-  photonames = [photonames {photo_list.name}];
-  save('dataset.mat','data','labels', 'photonames');
+  save('dataset.mat','data','labels');
  %  read a new user
-end   
+end
+
+   
 
 %% create a dataset.mat file that contains the results obtained
 
